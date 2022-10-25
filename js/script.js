@@ -31,3 +31,8 @@ const members = [
     pic:"barbara-ramos-graphic-designer.jpg",
   }
 ]
+
+for(let member of members){
+  const output = `${member.name} ${member.role} ${member.pic}`
+  console.log(output);
+}
