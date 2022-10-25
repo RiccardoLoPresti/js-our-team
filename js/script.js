@@ -73,7 +73,9 @@ for(let member of members){
   const output = `
   <div class="col py-4">
     <div class="card" style="width: 18rem;">
-      <img src="img/${member.pic}" class="card-img-top" alt="${member.pic}">
+      <div class="box_img">
+        <img src="img/${member.pic}" class="card-img-top rl-img" alt="${member.pic}">
+      </div>
       <div class="card-body">
         <h5 class="card-title">${member.name}</h5>
         <p class="card-text">${member.role}</p>

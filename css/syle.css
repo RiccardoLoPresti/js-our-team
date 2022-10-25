@@ -1,0 +1,9 @@
+.box_img{
+  overflow: hidden;
+}
+.rl-img{
+  transition: 1s all ease-in-out;
+}
+.card:hover .rl-img{
+  transform: scale(1.125);
+}
