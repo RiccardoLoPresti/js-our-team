@@ -33,6 +33,8 @@ const members = [
 ]
 
 for(let member of members){
-  const output = `${member.name} ${member.role} ${member.pic}`
+  const output = `<li>${member.name} ${member.role} ${member.pic}</li>`;
+  const lista = document.querySelector('#lista');
+  lista.innerHTML += output;
   console.log(output);
 }
