@@ -45,7 +45,7 @@ const members = [
     pic:"scott-estrada-developer.jpg",
     adjectives:[
       "Risata a 59 denti",
-      "Utilizzto per rilfettere la luce ai pannelli solari tramite i suoi denti bianchissimi",
+      "Utilizzato per riflettere la luce ai pannelli solari tramite i suoi denti bianchissimi",
       "Outfit impeccabile"
     ],
   },
@@ -62,12 +62,13 @@ const members = [
 
 
 for(let member of members){
+  //dichiaro el vuoto
   let el = '';
-
+  //creo lista di aggettivi
   for(let adjective of member.adjectives){
     el += `<li class="list-group-item">${adjective}</li>`
   }
-  console.log(el);
+  //console.log(el);
 
   //creo output con template litteral
   const output = `
@@ -86,7 +87,9 @@ for(let member of members){
     </div>
   </div>
   `;
+  //seleziono il row dall'HTML
   const row = document.querySelector('.row');
+  //scrivo dentro a row l'output
   row.innerHTML += output;
-  console.log(output);
+  //console.log(output);
 }
